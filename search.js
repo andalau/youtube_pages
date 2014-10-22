@@ -5,14 +5,16 @@
 function showResponse(response) {
     
     var responseString = JSON.stringify(response, '', 2);
+    
     var jsonobj = JSON.parse(responseString);
     
-    var test = jsonob.
+    var test = jsonob.data.items[0].title;
     
     document.getElementById('response').innerHTML += test;
     
     console.log(response);
     console.log(jsonobj);
+    
     
     
     //document.getElementById('response').innerHTML += responseString;
