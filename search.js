@@ -7,7 +7,7 @@ function showResponse(response) {
     var responseString = JSON.stringify(response, '', 2);
     var jsonobj = JSON.parse(responseString);
     
-    document.getElementById('response').innerHTML += jsonobj;
+    document.getElementById('response').innerHTML += jsonobj.items[0];
     
     console.log(response);
     console.log(jsonobj);
