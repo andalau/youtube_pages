@@ -36,8 +36,5 @@ function search() {
 
 // Called automatically with the response of the YouTube API request.
 function onSearchResponse(response) {
-    var jsonObject = JSON.parse(response);
-    
-    
-    showResponse(jsonObject);
+    showResponse(response);
 }
