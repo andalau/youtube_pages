@@ -3,7 +3,7 @@
 
 // Helper function to display JavaScript value on HTML page.
 function showResponse(response) {
-    var jsonobj JSON.parse(response);
+    var jsonobj = JSON.parse(response);
     
     document.getElementById('response').innerHTML += response;
     document.getElementById('response').innerHTML += jsonobj;
