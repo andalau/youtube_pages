@@ -8,7 +8,7 @@ function showResponse(response) {
     
     var jsonobj = JSON.parse(responseString);
     
-    var test = jsonobj.data.items[0].title;
+    var test = jsonobj.data.items[0];
     
     document.getElementById('response').innerHTML += test;
     
