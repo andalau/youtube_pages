@@ -1,4 +1,4 @@
-var search_term;
+var search_term = "";
 
 function submitSearch()
 {
