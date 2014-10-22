@@ -3,17 +3,24 @@
 
 // Helper function to display JavaScript value on HTML page.
 function showResponse(response) {
+    console.log(response);
+    console.log(jsonobj);
+    
     
     var responseString = JSON.stringify(response, '', 2);
     
     var jsonobj = JSON.parse(responseString);
     
-    var test = jsonobj.items[0].id.videoId;
+    var links = new Array()
+    for (i = 0; i < 5; i++)
+    {
+        links[i] = jsonobj.items[i].id.videoId;
+    }
     
-    document.getElementById('response').innerHTML += test;
     
-    console.log(response);
-    console.log(jsonobj);
+    document.getElementById('response').innerHTML += links;
+    
+    
     
     
     
