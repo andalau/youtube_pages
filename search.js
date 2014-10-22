@@ -16,7 +16,7 @@ function onClientLoad() {
 function onYouTubeApiLoad() {
     // This API key is intended for use only in this lesson.
     // See http://goo.gl/PdPA1 to get a key for your own applications.
-    gapi.client.setApiKey('AIzaSyCR5In4DZaTP6IEZQ0r1JceuvluJRzQNLE');
+    gapi.client.setApiKey('AIzaSyCUhEPOJCw0UoxZcvK5NsWhtv_8z5lJfvQ');
     
     // Add code here to test out showResponse():
     showResponse("Hooray!");
