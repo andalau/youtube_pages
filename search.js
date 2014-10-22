@@ -3,9 +3,9 @@
 
 // Helper function to display JavaScript value on HTML page.
 function showResponse(response) {
-
-    var responseString = JSON.stringify(response, '', 2);
-    document.getElementById('response').innerHTML += responseString;
+    document.getElementById('response').innerHTML += response;
+    //var responseString = JSON.stringify(response, '', 2);
+    //document.getElementById('response').innerHTML += responseString;
 }
 
 // Called automatically when JavaScript client library is loaded.
