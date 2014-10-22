@@ -3,6 +3,7 @@ var search_term = "";
 function submitSearch()
 {
     search_term = document.getElementById("search_query").submit();
+    console.log(search_term);
     
 }
 
