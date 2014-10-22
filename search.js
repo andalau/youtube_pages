@@ -1,10 +1,3 @@
-var search_term = "";
-
-function myFunction() {
-    
-    search_term =document.getElementById("search_query").submit();
-    console.log(search_term);
-}
 
 
 
@@ -64,7 +57,7 @@ function search() {
     // Use the JavaScript client library to create a search.list() API call.
     var request = gapi.client.youtube.search.list({
         part: 'snippet',
-        q: search_term
+        q: query
         
     });
     
