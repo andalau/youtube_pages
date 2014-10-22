@@ -1,5 +1,4 @@
-
-
+var query = document.getElementById("query").value;
 
 // Your use of the YouTube API must comply with the Terms of Service:
 // https://developers.google.com/youtube/terms
