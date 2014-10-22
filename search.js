@@ -3,9 +3,13 @@
 
 // Helper function to display JavaScript value on HTML page.
 function showResponse(response) {
+    var jsonobj JSON.parse(response);
     
     document.getElementById('response').innerHTML += response;
+    document.getElementById('response').innerHTML += jsonobj;
+    
     console.log(response);
+    console.log(jsonobj);
     
     //var responseString = JSON.stringify(response, '', 2);
     //document.getElementById('response').innerHTML += responseString;
