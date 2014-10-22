@@ -20,7 +20,7 @@ function showResponse(response) {
     
     for (j = 0; j < 5; j++)
     {
-        document.getElementById('response').innerHTML += jsonobj.items[j].snippet.title;
+        document.getElementById('response').innerHTML += jsonobj.items[j].snippet.title + "\n";
     }
     
     
