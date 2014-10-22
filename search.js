@@ -55,7 +55,7 @@ function onYouTubeApiLoad() {
 
 function search() {
     var search_term = "";
-    search_term = document.getElementById("search_query");
+    search_term = document.getElementById("search_query").submit();
     console.log(search_term);
     
     // Use the JavaScript client library to create a search.list() API call.
