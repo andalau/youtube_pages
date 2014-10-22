@@ -39,5 +39,5 @@ function onSearchResponse(response) {
     var jsonObject = JSON.parse(response);
     
     
-    showResponse(jsonObject[0]);
+    showResponse(jsonObject);
 }
