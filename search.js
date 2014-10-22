@@ -6,7 +6,7 @@ function showResponse(response) {
     
     var jsonObj = JSON.parse(response);
     
-    var responseString = jsonObj[0];
+    var responseString = jsonObj.videoId;
     
     //var responseString = JSON.stringify(response, '', 2);
     document.getElementById('response').innerHTML += responseString;
