@@ -11,16 +11,21 @@ function showResponse(response) {
     //parsing json object
     var jsonobj = JSON.parse(responseString);
     
-    //collecting videoId links and placing them into an array
+    //collecting videoId links and titles and placing them into an array
     var links = new Array()
+    var titles = new Array()
+    
     for (i = 0; i < 5; i++)
     {
         links[i] = jsonobj.items[i].id.videoId;
+        titles[i] = jsonobj.items[i].snippet.title;
     }
     
+    //displays video links
+    
     for (j = 0; j < 5; j++)
-    {
-        document.getElementById('response').innerHTML += jsonobj.items[j].snippet.title + "\n";
+    {   
+        document.getElementById('response').innerHTML += titles[j].link("https://www.youtube.com/watch?v=" + links[j]) + "\n";
     }
     
     
