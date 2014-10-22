@@ -54,8 +54,7 @@ function onYouTubeApiLoad() {
 
 function search() {
     
-    var x = document.getElementById("search_query");
-    var search_term = x.elements.value;
+    var search_term = document.getElementById("search_query");
     
     // Use the JavaScript client library to create a search.list() API call.
     var request = gapi.client.youtube.search.list({
