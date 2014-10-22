@@ -5,6 +5,7 @@
 function showResponse(response) {
     
     document.getElementById('response').innerHTML += response;
+    console.log(response);
     
     //var responseString = JSON.stringify(response, '', 2);
     //document.getElementById('response').innerHTML += responseString;
