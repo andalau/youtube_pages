@@ -2,7 +2,7 @@ var search_term = "";
 
 function submitSearch()
 {
-    search_term = document.getElementById("search_query");
+    search_term = document.getElementById("search_query").submit();
     
 }
 
