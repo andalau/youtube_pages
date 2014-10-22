@@ -3,12 +3,8 @@
 
 // Helper function to display JavaScript value on HTML page.
 function showResponse(response) {
-    
-    var jsonObj = JSON.parse(response);
-    
-    var responseString = jsonObj.videoId;
-    
-    //var responseString = JSON.stringify(response, '', 2);
+
+    var responseString = JSON.stringify(response, '', 3);
     document.getElementById('response').innerHTML += responseString;
 }
 
