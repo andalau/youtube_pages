@@ -1,4 +1,8 @@
-
+function submitSearch()
+{
+    var search_term = document.getElementById("search_query");
+    
+}
 
 
 // Your use of the YouTube API must comply with the Terms of Service:
@@ -53,10 +57,6 @@ function onYouTubeApiLoad() {
 }
 
 function search() {
-    
-    var search_term = document.getElementById("search_query");
-    console.log(search_term);
-    
     // Use the JavaScript client library to create a search.list() API call.
     var request = gapi.client.youtube.search.list({
         part: 'snippet',
