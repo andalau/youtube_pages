@@ -1,4 +1,4 @@
-var query = "";
+var query;
 
 function queryValue() {
     query = document.getElementById("query").value;
