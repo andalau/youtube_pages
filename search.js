@@ -1,9 +1,4 @@
-var query;
 
-function queryValue() {
-    query = document.getElementById("query").value;
-    console.log(query);
-}
 
 
 // Your use of the YouTube API must comply with the Terms of Service:
@@ -58,6 +53,8 @@ function onYouTubeApiLoad() {
 }
 
 function search() {
+    var params = location.search.split("=");
+    var query = params[1];
     
     // Use the JavaScript client library to create a search.list() API call.
     var request = gapi.client.youtube.search.list({
