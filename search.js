@@ -1,6 +1,7 @@
 var query = "";
 
 function queryValue() {
+    console.log(document.getElementById("query").value);
     query = document.getElementById("query").value;
 }
 
