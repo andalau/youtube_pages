@@ -1,8 +1,8 @@
 var query = "";
 
 function queryValue() {
-    console.log(document.getElementById("query").value);
     query = document.getElementById("query").value;
+    console.log(query);
 }
 
 
@@ -62,7 +62,7 @@ function search() {
     // Use the JavaScript client library to create a search.list() API call.
     var request = gapi.client.youtube.search.list({
         part: 'snippet',
-        q: 'destiny'
+        q: query
         
     });
     
